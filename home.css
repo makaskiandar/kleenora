@@ -739,12 +739,12 @@ color: #00cc66;
     border-radius: 20px;
 }
 .ficon{
-    width: 20px;
-    height: 20px;
+    width: 53px;
+    height: 42px;
     border-radius: 50%;
     background: radial-gradient(circle, #00cc66, #006633);
     margin: 0 auto;
-    padding: 20px;
+    padding: 7px 0;
         box-shadow: 0 0 15px rgba(0, 204, 102, 0.7);
 }
 .main9 h1{
@@ -761,7 +761,7 @@ color: #00cc66;
     gap: 20px;
 }
 .finfo input{
-width: 280px;
+width: 172px;
 height: 40px;
 background-color: #2a2f3e;
 padding: 15px 30px;
@@ -818,4 +818,716 @@ color: #00cc66;
     color:white;
     font-size:40px;
     cursor:pointer;
+}
+
+/* ===========================
+   RESPONSIVE (PART 1)
+   Phones & Tablets
+=========================== */
+
+@media screen and (max-width:992px){
+
+body{
+    overflow-x:hidden;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+@media (max-width:768px){
+
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    padding:12px;
+    height:auto;
+    gap:12px;
+}
+
+.logo{
+    width:140px;
+    height:auto;
+    margin:0;
+}
+
+.links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
+    width:100%;
+    gap:12px;
+    padding:0;
+    margin:0;
+}
+
+.links li img{
+    width:16px;
+    height:16px;
+}
+
+.links li a{
+    font-size:15px;
+    padding:5px 0;
+}
+
+/* Second row */
+.search{
+    width:75%;
+    height:38px;
+    margin:0;
+}
+
+.cart{
+    margin:0;
+}
+
+.cart img{
+    width:40px;
+    height:40px;
+    margin:0;
+}
+
+.main{
+    padding-top:150px;
+}
+
+}
+/* ---------------- HERO ---------------- */
+
+.main{
+    height:auto;
+    min-height:100vh;
+    padding-top:170px;
+    padding-bottom:60px;
+}
+#cartCount{
+    font-size: 13px;
+}
+
+.info{
+    margin-top:0;
+    padding:0 20px;
+}
+
+.icon11{
+    margin-top:10px;
+}
+
+.icon1{
+    padding:3px 18px;
+    width:auto;
+    margin-bottom: 12px;
+}
+
+.text{
+    font-size:18px;
+    padding:10px;
+}
+
+.P{
+    margin-bottom:6px;
+    padding-bottom: 0;
+    font-size:18px;
+}
+
+.logo2{
+    width:260px;
+    height:auto;
+}
+
+.heading{
+    font-size:55px;
+    line-height:1.1;
+    text-align:center;
+}
+
+.paragraph{
+    font-size:20px;
+    line-height:1.7;
+    padding:0 10px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.buttons button{
+    width:240px;
+    padding:18px;
+    font-size:18px;
+}
+
+.bottombuttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.bottombuttons div{
+    padding:9px 25px;
+    font-size:18px;
+}
+
+/* ---------------- TITLES ---------------- */
+
+.main1,
+.main3,
+.main5{
+    padding:9px 20px;
+}
+
+.main1 h1,
+.main3 h1,
+.main5 h1{
+    font-size:42px;
+}
+
+.main1 p,
+.main3 p,
+.main5 p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* ---------------- CATEGORY BOXES ---------------- */
+
+.boxes{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    padding:30px;
+}
+
+.box button{
+    height:280px;
+    padding:20px;
+}
+
+.box img{
+    width:80px;
+    height:80px;
+}
+
+.box h1{
+    font-size:24px;
+}
+
+.box p{
+    font-size:17px;
+}
+
+}
+/* ===========================
+   RESPONSIVE (PART 2)
+   PRODUCT CARDS
+=========================== */
+
+@media screen and (max-width:992px){
+
+.main4{
+    min-height:auto;
+    padding:40px 20px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:stretch;
+    gap:30px;
+}
+
+/* Card */
+
+.card{
+    width:340px;
+    min-height:auto;
+    padding:18px;
+    box-sizing:border-box;
+}
+
+.cardimage{
+    width:100%;
+    min-height:260px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image{
+    width:55%;
+    height:auto;
+    object-fit:contain;
+}
+
+#imagenew,
+#imagenew2{
+    width:55%;
+    height:auto;
+}
+
+.discount{
+    top:12px;
+    left:12px;
+    padding:8px 12px;
+    font-size:15px;
+}
+
+.eye{
+    top:12px;
+    right:12px;
+    padding:8px;
+    font-size:18px;
+}
+
+.symbol{
+    gap:12px;
+}
+
+.symbol div{
+    padding:15px;
+    font-size:18px;
+}
+
+.smallimages{
+    bottom:12px;
+}
+
+.smallimages img{
+    width:50px;
+    height:50px;
+}
+
+.kleenora h2{
+    font-size:18px;
+}
+
+.card h3{
+    font-size:22px;
+    margin-top:12px;
+}
+
+/* Rating */
+
+.rating{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:15px 0;
+}
+
+.rating span{
+    margin-left:6px;
+    font-size:14px;
+}
+
+/* Price */
+
+.price{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin:18px 0;
+}
+
+.original{
+    font-size:26px;
+}
+
+.off{
+    font-size:21px;
+    margin:0;
+}
+
+/* Features */
+
+.features{
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+    height:auto;
+    padding:15px;
+}
+
+.features ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:0;
+    padding:0;
+}
+
+.features li{
+    font-size:14px;
+}
+
+/* Button */
+
+.buttonn{
+    padding:20px 0 0;
+    margin:0;
+}
+
+.card button{
+    width:100%;
+    height:52px;
+    font-size:18px;
+}
+
+/* -------- Phones -------- */
+
+@media screen and (max-width:768px){
+
+.cards{
+    gap:25px;
+}
+
+.card{
+    width:95%;
+    max-width:380px;
+}
+
+.cardimage{
+    min-height:230px;
+}
+
+.image,
+#imagenew,
+#imagenew2{
+    width:52%;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+.original{
+    font-size:24px;
+}
+
+.off{
+    font-size:18px;
+}
+
+.features li{
+    font-size:13px;
+}
+
+.card button{
+    height:50px;
+    font-size:17px;
+}
+
+}
+
+}
+/* ===========================
+   RESPONSIVE (PART 3)
+   WHY CHOOSE US + FOOTER
+=========================== */
+
+@media screen and (max-width:992px){
+
+/* ---------- WHY CHOOSE ---------- */
+
+.main5{
+    padding:0 40px;
+    margin-top: -130px;
+}
+
+.boxes2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:30px 0;
+}
+
+.box2{
+    width:280px;
+    height:auto;
+    padding:25px;
+    box-sizing:border-box;
+}
+
+.box2 img{
+    width:80px;
+    height:80px;
+}
+
+.box2 h3{
+    font-size:26px;
+    margin:15px 0 10px;
+}
+
+.box2 p{
+    font-size:18px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+    height:auto;
+    padding:30px 20px;
+}
+
+.main6,
+.main7,
+.main8,
+.main9{
+    width:100%;
+    margin-bottom:25px;
+}
+
+.K{
+    padding:25px 0;
+}
+
+.K div{
+    width:49px;
+    height:50px;
+    padding:18px;
+    font-size:22px;
+}
+
+.text5{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.text5>:nth-child(1){
+    font-size:36px;
+    padding:0;
+}
+
+.text5>:nth-child(2){
+    font-size:22px;
+}
+
+.main6 p{
+    font-size:18px;
+    line-height:1.8;
+    padding:20px;
+}
+
+.line{
+    width:95%;
+    margin:auto;
+}
+
+.main7{
+    padding:20px;
+    
+}
+
+.main7 h1{
+    font-size:30px;
+}
+
+.main7 ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+    padding:20px 0;
+}
+
+.main7 ul li{
+    list-style:none;
+}
+
+.main7 ul li a{
+    font-size:18px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
+    padding:30px 0;
+}
+
+.social img{
+    width:55px;
+    height:55px;
+}
+
+.main9{
+    padding:25px;
+}
+
+.main9 h1{
+    font-size:28px;
+}
+
+.main9 p{
+    font-size:17px;
+}
+
+/* ---------- GLOBAL ---------- */
+
+img{
+    max-width:100%;
+}
+
+button{
+    max-width:100%;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+}
+
+
+/* ===========================
+        PHONES
+=========================== */
+
+@media screen and (max-width:768px){
+
+.main{
+    padding-top:210px;
+}
+
+.heading{
+    font-size:42px;
+}
+
+.paragraph{
+    font-size:17px;
+}
+
+.logo2{
+    width:220px;
+}
+
+.buttons button{
+    width:100%;
+}
+
+.bottombuttons{
+    flex-direction:column;
+}
+
+.boxes{
+    grid-template-columns:1fr;
+}
+
+.box button{
+    height:auto;
+}
+
+.box2{
+    width:100%;
+}
+
+.text5{
+    flex-direction:column;
+}
+
+.text5>:nth-child(1){
+    font-size:30px;
+}
+
+.text5>:nth-child(2){
+    font-size:18px;
+}
+
+.main6 p{
+    font-size:16px;
+}
+
+.main7 ul{
+    flex-direction:column;
+    gap:12px;
+}
+
+.social{
+    gap:12px;
+}
+
+.footer{
+    padding:20px 10px;
+}
+
+.main1 h1,
+.main3 h1,
+.main5 h1{
+    font-size:34px;
+}
+
+.main1 p,
+.main3 p,
+.main5 p{
+    font-size:17px;
+}
+
+}
+
+
+/* ===========================
+      SMALL PHONES
+=========================== */
+
+@media screen and (max-width:480px){
+
+.heading{
+    font-size:34px;
+}
+
+.logo{
+    width:140px;
+}
+
+.logo2{
+    width:180px;
+}
+
+.search{
+    width:75%;
+}
+
+.card{
+    width:100%;
+}
+
+.box2{
+    padding:20px;
+}
+
+.box2 h3{
+    font-size:22px;
+}
+
+.box2 p{
+    font-size:16px;
+}
+
+.main7 h1{
+    font-size:24px;
+}
+
+.text5>:nth-child(1){
+    font-size:26px;
+}
+
+.text5>:nth-child(2){
+    font-size:16px;
+}
+
 }
