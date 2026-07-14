@@ -155,29 +155,17 @@ function renderCart() {
             <img class="cart-product-img" src="${item.image}">
 
             <div class="cart-info">
-
                 <h3>${item.name}</h3>
-
                 <p>Rs. ${item.price}</p>
-
             </div>
-
            <div class="qty">
-
     <button onclick="decreaseQty('${item.name}')">−</button>
-
 <span>${item.quantity}</span>
-
 <button onclick="increaseQty('${item.name}')">+</button>
-
 <button class="remove" onclick="removeItem('${item.name}')">✖</button>
-
 </div>
-
         </div>
-
         `;
-
     });
     document.getElementById("sidebarCount").textContent =
         cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -190,7 +178,6 @@ function renderCart() {
 
         totalPrice += item.price * item.quantity;
         totalItems += item.quantity;
-
     });
     cartSummary.textContent =
         `(${totalItems}) Items | Rs.${totalPrice} Total`;
@@ -204,7 +191,6 @@ if (totalItems > 0) {
 } else {
     cartCount.style.opacity = "0";
 }
-
     localStorage.setItem("cart", JSON.stringify(cart));
     const savedCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -215,7 +201,6 @@ if (savedCount > 0) {
     cartCount.style.transform = "scale(1)";
 }
 }
-
 function increaseQty(name) {
 
     const item = cart.find(product => product.name === name);
