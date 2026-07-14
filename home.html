@@ -21,7 +21,7 @@
                 <li><img src="https://kleenora.store/pic-14.jpg" alt=""><a href="contact.html">Contact Us</a></li>
             </ul>
             <input class="search" type="text" placeholder="Search...">
-            <div class="cart">
+            <div class="cart" id="cartIcon">
                 <img src="https://kleenora.store/newcart.png" alt="">
                 <span id="cartCount">0</span>
             </div>
@@ -825,6 +825,39 @@
         <span class="close">&times;</span>
         <img id="lightbox-img" src="">
     </div>
+
+    <div id="cartModal" class="cart-modal">
+        <span class="close">&times;</span>
+        <div class="success-icon">✔</div>
+        <h2>Item added to your cart</h2>
+        <p id="cartSummary">(0) Items | Rs.0 Total</p>
+        <div class="modal-buttons">
+            <button id="continueBtn">Continue Shopping</button>
+            <button id="gotoCart">Go to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+        <h2>Shopping Cart (<span id="sidebarCount">0</span>)</h2>
+        <span id="closeCart">&times;</span>
+    </div>
+
+    <div id="cartItems">
+
+    </div>
+
+    <div class="cart-footer">
+        <h2>Total: Rs. <span id="cartTotal">0</span></h2>
+
+        <button class="checkoutBtn">
+            Checkout
+        </button>
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="home.js"></script>
 </body>
 
